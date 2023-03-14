@@ -21,7 +21,7 @@ window.onload = function () {
             // ルーレットタイマーを設定
             timer = setInterval(function () {
                 var random = Math.floor(Math.random() * Object.keys(list).length);
-                document.getElementById("img").src = "img/" + Object.keys(list)[random] + ".png";
+                document.getElementById("img").src = Object.keys(list)[random] + ".png";
             }, 10);
         // STOP
         } else {
@@ -33,7 +33,7 @@ window.onload = function () {
             for(var data in list){
                 rate += list[data];
                 if(random <= rate){
-                    document.getElementById("img").src = "img/" + data + ".png";
+                    document.getElementById("img").src = data + ".png";
 
                     // ルーレットタイマーを停止
                     clearInterval(timer);
