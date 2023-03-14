@@ -3,10 +3,10 @@ window.onload = function () {
   const list = {
     "daikichi":46,
     "kichi":20,
-    "chuukichi":15,
+    "chuukichi":16,
     "syoukichi":10,
     "suekichi":5,
-    "kyou":3,
+    "kyou":2,
     "daikyou":1,
   };
 
@@ -17,12 +17,12 @@ window.onload = function () {
     if (this.textContent == "START") {
       // ボタンのテキストを"STOP"に変更
       this.textContent = "STOP";
-
       // ルーレットタイマーを設定
       timer = setInterval(function () {
         var random = Math.floor(Math.random() * Object.keys(list).length);
         document.getElementById("img").src = "img/" + Object.keys(list)[random] + ".png";
       }, 10);
+      
     // STOP
     } else {
       // ボタンのテキストを"START"に変更
