@@ -41,5 +41,7 @@ window.onload = function () {
                 }
             }
         }
+      };
+};
 
 
