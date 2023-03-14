@@ -1,13 +1,13 @@
 window.onload = function () {
 
   const list = {
-    "daikichi":10,
-    "kichi":15,
-    "chuukichi":20,
-    "syoukichi":25,
-    "suekichi":15,
-    "kyou":10,
-    "daikyou":5,
+    "daikichi":46,
+    "kichi":20,
+    "chuukichi":15,
+    "syoukichi":10,
+    "suekichi":5,
+    "kyou":3,
+    "daikyou":1,
   };
 
   var timer;
