@@ -11,13 +11,13 @@ window.onload = function () {
   };
 
   var timer;
-  // START・STOPボタンクリックのイベント
+  // START・STOPボタンクリック
   document.getElementById("button").onclick = function () {
     // START
     if (this.textContent == "START") {
-      // ボタンのテキストを"STOP"に変更
+      // STOP に変更
       this.textContent = "STOP";
-      // ルーレットタイマーを設定
+      // タイマーを設定
       timer = setInterval(function () {
         var random = Math.floor(Math.random() * Object.keys(list).length);
         document.getElementById("img").src = "img/" + Object.keys(list)[random] + ".png";
@@ -25,7 +25,7 @@ window.onload = function () {
       
     // STOP
     } else {
-      // ボタンのテキストを"START"に変更
+      // START に変更
       this.textContent = "START";
 
       var rate = 0;
@@ -35,7 +35,7 @@ window.onload = function () {
         if(random <= rate){
           document.getElementById("img").src = "img/" + data + ".png";
 
-          // ルーレットタイマーを停止
+          // タイマーを停止
           clearInterval(timer);
           return;
         }
