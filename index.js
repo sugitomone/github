@@ -1,10 +1,10 @@
 window.onload = function () {
 
   const list = {
-    "daikichi":46,
-    "kichi":20,
-    "chuukichi":16,
-    "syoukichi":10,
+    "daikichi":55,
+    "kichi":16,
+    "chuukichi":13,
+    "syoukichi":8,
     "suekichi":5,
     "kyou":2,
     "daikyou":1,
